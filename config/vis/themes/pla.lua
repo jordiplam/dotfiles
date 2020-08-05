@@ -1,0 +1,59 @@
+local lexers = vis.lexers
+
+local colors = {
+	['base00'] = 'default', -- backgroud
+	['base01'] = '#f2556e', -- red
+	['base02'] = '#9be567', -- green
+	['base03'] = '#f2ce61', -- yellow
+	['base04'] = '#67d0e5', -- blue
+	['base05'] = '#67d0e5', -- purple
+	['base06'] = '#ff9966', -- orange
+	['base07'] = '#ece6f2', -- white
+	['base08'] = '#706d73', -- gray
+}
+--local colors = {
+--	['base00'] = 'default', -- backgroud
+--	['base01'] = '#ff6188', -- red
+--	['base02'] = '#a9dc76', -- green
+--	['base03'] = '#ffd866', -- yellow
+--	['base04'] = '#78dce8', -- blue
+--	['base05'] = '#ab9df2', -- purple
+--	['base06'] = '#fc9867', -- orange
+--	['base07'] = '#dfdfdf', -- white
+--	['base08'] = '#908e8f', -- gray
+--}
+
+lexers.STYLE_DEFAULT = 'back:'..colors.base00..',fore:'..colors.base07
+lexers.STYLE_NOTHING = 'back:'..colors.base00
+lexers.STYLE_CLASS = 'fore:'..colors.base03..',bold'
+lexers.STYLE_COMMENT = 'fore:'..colors.base08..',bold'
+lexers.STYLE_CONSTANT = 'fore:'..colors.base06..',bold'
+lexers.STYLE_DEFINITION = 'fore:'..colors.base07..',bold'
+lexers.STYLE_ERROR = 'fore:'..colors.base01..',italics'
+lexers.STYLE_FUNCTION = 'fore:'..colors.base02..',bold'
+lexers.STYLE_KEYWORD = 'fore:'..colors.base06..',bold'
+lexers.STYLE_LABEL = 'fore:'..colors.base02..',bold'
+lexers.STYLE_NUMBER = 'fore:'..colors.base05..',bold'
+lexers.STYLE_OPERATOR = 'fore:'..colors.base01..',bold'
+lexers.STYLE_REGEX = 'fore:'..colors.base02..',bold'
+lexers.STYLE_STRING = 'fore:'..colors.base03..',bold'
+lexers.STYLE_PREPROCESSOR = 'fore:'..colors.base04..',bold'
+lexers.STYLE_TAG = 'fore:'..colors.base01..',bold'
+lexers.STYLE_TYPE = 'fore:'..colors.base05..',bold'
+lexers.STYLE_VARIABLE = 'fore:'..colors.base07..',bold'
+lexers.STYLE_WHITESPACE = ''
+lexers.STYLE_EMBEDDED = 'back:'..colors.base07..',bold'
+lexers.STYLE_IDENTIFIER = 'fore:'..colors.base07
+
+lexers.STYLE_LINENUMBER = 'fore:'..colors.base08
+lexers.STYLE_LINENUMBER_CURSOR = 'fore:'..colors.base07
+lexers.STYLE_CURSOR = 'reverse'
+lexers.STYLE_CURSOR_PRIMARY = lexers.STYLE_CURSOR..',fore:'..colors.base03
+lexers.STYLE_CURSOR_LINE = 'back:#393939'
+lexers.STYLE_COLOR_COLUMN = 'back:#393939'
+lexers.STYLE_SELECTION = 'back:'..colors.base08
+lexers.STYLE_STATUS = 'reverse'
+lexers.STYLE_STATUS_FOCUSED = 'reverse,bold'
+lexers.STYLE_SEPARATOR = lexers.STYLE_DEFAULT
+lexers.STYLE_INFO = 'fore:'..colors.base07..',back:'..colors.base00..',bold'
+lexers.STYLE_EOF = ''

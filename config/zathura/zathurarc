@@ -1,0 +1,13 @@
+set recolor-keephue "true"
+set default-bg "#080808"
+set recolor-lightcolor "#121212"
+set recolor-darkcolor "#e9e9e9"
+
+set inputbar-fg "#e9e9e9"
+set highlight-color "#2e9fe6"
+set highlight-active-color "#0673e0"
+
+set statusbar-basename "true"
+
+set selection-clipboard clipboard
+set font "monospace normal 11"

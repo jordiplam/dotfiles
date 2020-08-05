@@ -1,0 +1,13 @@
+#!/bin/sh
+
+source "${XDG_CONFIG_HOME}/shell/aliases.sh"
+source "${XDG_CONFIG_HOME}/shell/change_PS1.sh"
+source "${XDG_CONFIG_HOME}/shell/functions.sh"
+
+function USE_CUDA() {
+	PATH=/usr/local/cuda/bin:/usr/local/cuda/bin/gcc-8.4.0/bin:${PATH}
+}
+
+function zoom() {
+	${HOME}/.local/ZOOM/ZoomLauncher
+}
